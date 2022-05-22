@@ -7,6 +7,10 @@ import org.slf4j.LoggerFactory;
 import com.kiran.corepatterns.abstractFactory.Dao;
 import com.kiran.corepatterns.abstractFactory.DaoAbstractFactory;
 import com.kiran.corepatterns.abstractFactory.DaoFactoryProducer;
+import com.kiran.corepatterns.decorator.CheesePizzaDecorator;
+import com.kiran.corepatterns.decorator.Pizza;
+import com.kiran.corepatterns.decorator.PlainPizza;
+import com.kiran.corepatterns.factory.CheesePizza;
 import com.kiran.corepatterns.factory.PizzaStore;
 import com.kiran.corepatterns.singleton.SingletonPattern;
 
@@ -39,5 +43,12 @@ public class DesignPatternTest {
 		Dao dao = daf.createDao("dept");
 		dao.save();
 		
+	}
+	
+	@Test
+	void testDecoratorPattern()
+	{
+		Pizza pizza = new CheesePizzaDecorator(new PlainPizza());
+		pizza.bake();
 	}
 }
