@@ -1,0 +1,19 @@
+package com.kiran.corepatterns;
+
+import org.junit.jupiter.api.Test;
+
+import com.kiran.corepatterns.patterns.SingletonPattern;
+
+public class SingletonPatternTest {
+	
+	Logger logger = LoggerFactory.getLogger(LoggingFilter.class);
+
+	@Test
+	void testSingleton()
+	{
+		SingletonPattern sp = SingletonPattern.getInstance();
+		SingletonPattern sp = SingletonPattern.getInstance();
+		
+	}
+	
+}

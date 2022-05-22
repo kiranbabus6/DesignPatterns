@@ -1,0 +1,9 @@
+package com.kiran.corepatterns;
+
+public class SingletonPatternTest {
+
+	@Test
+	void testSingleton()
+	{}
+	
+}
