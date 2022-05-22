@@ -1,4 +1,4 @@
-package com.kiran.corepatterns.patterns;
+package com.kiran.corepatterns.singleton;
 
 public class SingletonPattern {
 

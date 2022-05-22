@@ -1,4 +1,4 @@
-package com.kiran.corepatterns.vos;
+package com.kiran.corepatterns.factory;
 
 public class ChickenPizza implements Pizza{
 
